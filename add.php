@@ -1,7 +1,7 @@
-<?php
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-       <title>Add Users - Menambahkan User Baru</title>
+       <title> Add Users - Menambahkan User Baru</title>
    </head>
     
    <body>
@@ -47,13 +47,11 @@
            include_once("config.php");
                    
            // Insert user data into table
-           $result = mysqli_query($mysqli, "INSERT INTO users(nama,divisi,request,progres) VALUES('$nama','$divisi','$request','$progres')");
+           $result = mysqli_query($mysqli, "INSERT INTO users(nama,divisi,request,progres) VALUES ('$nama','$divisi','$request','$progres')");
            
            // Show message when user added
            echo "User added successfully. <a href='index.php'>View Users</a>";
        }
        ?>
    </body>
-   </html> 
-
-?>
+   </html>
